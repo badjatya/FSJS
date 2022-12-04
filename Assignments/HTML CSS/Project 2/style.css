@@ -1,0 +1,136 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+[aria-label="navbar"] {
+  background: #000;
+}
+
+.navbar {
+  height: 80px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navbar div img {
+  height: 2rem;
+}
+
+.navbar .line {
+  border-right: 1px solid #fff;
+  width: 2px;
+  height: 50%;
+}
+
+.navbar .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  list-style: none;
+}
+.navbar .list-item {
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar .list-item:hover {
+  color: #ba0cc5;
+}
+
+.navbar .list-item:first-child::after {
+  content: "\f078";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 0.75rem;
+  margin-left: 10px;
+}
+
+.navbar div:nth-child(4) {
+  position: absolute;
+  right: 0;
+}
+
+.button-small {
+  background: #ba0cc5;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-small:hover {
+  background: #cf2cda;
+}
+
+/* Hero Section */
+
+[aria-label="hero"] {
+  height: calc(100vh - 80px);
+  background-image: url(./assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-heading {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 4.5rem;
+}
+
+.hero .hero-description {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero .button-large {
+  background: #ba0cc5;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero .button-large:hover {
+  background: #cf2cda;
+}
