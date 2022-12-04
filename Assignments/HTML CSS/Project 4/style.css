@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f9f5ed;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Nav Starts */
+.nav {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: #3b855b;
+}
+/* Nav ENDS */
+
+/* Main STARTS */
+.main {
+  max-width: 1200px;
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.left {
+  width: 45%;
+}
+.right {
+  width: 50%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  margin: 1rem 0;
+  color: #525252;
+  font-size: 14px;
+}
+
+.main .topImage {
+  margin: 8px;
+  width: 33%;
+}
+
+.main .bottomImage {
+  margin: 8px;
+  width: 70%;
+}
+
+button {
+  color: #fff;
+  background: #3b855b;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: #468b64;
+}
+/* Main ENDS */
