@@ -46,3 +46,81 @@ body {
   background: #41d399;
 }
 /* Nav ENDS */
+
+/* Main Section STARTS */
+.main {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+.main .left {
+  position: relative;
+  width: 60%;
+}
+
+.left .heading {
+  font-size: 4rem;
+  margin-bottom: 1.25rem;
+  line-height: 4.5rem;
+}
+
+.left .desc {
+  color: #aaa;
+}
+
+.left .btn {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  background: #41d399;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.left .rightIcon {
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+}
+
+.left .mouseIcon {
+  position: absolute;
+  right: -3rem;
+}
+
+.left .scope {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  width: 1000px;
+}
+
+.main .right {
+  position: relative;
+  width: 40%;
+  height: 80%;
+}
+
+.person {
+  height: 100%;
+}
+
+.green {
+  position: absolute;
+  right: 0;
+  height: 50%;
+}
+.yellow {
+  position: absolute;
+  right: 0;
+  height: 50%;
+}
+/* Main Section ENDS */
