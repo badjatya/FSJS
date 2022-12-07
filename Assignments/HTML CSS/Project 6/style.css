@@ -10,7 +10,7 @@ body {
   height: 100vh;
   background-color: #2b2923;
   font-family: "Poppins", sans-serif;
-  width: 1200px;
+  width: 1024px;
   margin: 0 auto;
 }
 
@@ -64,3 +64,30 @@ body {
   color: #fff;
 }
 /* Nav ENDS */
+
+/* Main STARTS */
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin: 2rem 0;
+}
+.headerContainer h1 {
+  font-size: 3rem;
+  width: 40%;
+}
+p {
+  width: 45%;
+  color: #cecccc;
+  font-size: 1.25rem;
+}
+
+.imgContainer {
+  height: 100%;
+}
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+/* Main ENDS */
