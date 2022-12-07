@@ -95,12 +95,11 @@ body {
 
 .left .scope {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+  left: 100px;
+  bottom: 0px;
   z-index: -1;
-  width: 1000px;
+  height: 500px;
+  width: 700px;
 }
 
 .main .right {
