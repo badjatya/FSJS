@@ -20,7 +20,7 @@
     <!-- Nav Starts -->
     <nav class="bg-[#2C2C32]">
       <div
-        class="xl:container m-auto flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10"
+        class="lg:container m-auto flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10 xl:px-16 2xl:px-44"
       >
         <div class="flex items-center gap-6">
           <!-- Logo Container -->
@@ -68,12 +68,28 @@
             </li>
           </ul>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 xl:gap-0">
           <!-- Menu Icon - Hamburger -->
           <i class="ri-menu-fill text-white text-2xl lg:hidden"></i>
 
           <!-- Search -->
-          <i class="hidden lg:block ri-search-line text-slate-400 text-xl"></i>
+          <i
+            class="hidden lg:block xl:hidden ri-search-line text-slate-400 text-xl"
+          ></i>
+
+          <!-- Search Input Container -->
+          <div
+            class="hidden xl:flex items-center text-white gap-2 py-4 px-4 cursor-pointer bg-[rgba(255,255,255,.08)]"
+          >
+            <i class="ri-search-line text-white text-lg"></i>
+            <input
+              type="text"
+              class="w-32 bg-transparent placeholder:text-white placeholder:font-light border-none focus:outline-none"
+              name="search"
+              id="search"
+              placeholder="Search Docs"
+            />
+          </div>
 
           <!-- Download button -->
           <div
