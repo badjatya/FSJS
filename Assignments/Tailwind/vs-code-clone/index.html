@@ -18,68 +18,70 @@
   </head>
   <body>
     <!-- Nav Starts -->
-    <nav
-      class="flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10"
-    >
-      <div class="flex items-center gap-6">
-        <!-- Logo Container -->
-        <div class="flex items-center gap-4 cursor-pointer">
-          <img class="w-6" src="./assets/vscode.svg" alt="vs code logo" />
-          <p class="text-white text-xl">Visual Studio Code</p>
+    <nav class="bg-[#2C2C32]">
+      <div
+        class="xl:container m-auto flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10"
+      >
+        <div class="flex items-center gap-6">
+          <!-- Logo Container -->
+          <div class="flex items-center gap-4 cursor-pointer">
+            <img class="w-6" src="./assets/vscode.svg" alt="vs code logo" />
+            <p class="text-white text-xl">Visual Studio Code</p>
+          </div>
+
+          <!-- nav links -->
+          <ul class="hidden lg:flex items-center gap-6">
+            <li>
+              <a href="#" class="text-slate-400 transition-all hover:text-white"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-slate-400 transition-all hover:text-white"
+                >Updates</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-slate-400 transition-all hover:text-white"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-slate-400 transition-all hover:text-white"
+                >API</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-slate-400 transition-all hover:text-white"
+                >Extensions</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-slate-400 transition-all hover:text-white"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-slate-400 transition-all hover:text-white"
+                >Learn</a
+              >
+            </li>
+          </ul>
         </div>
+        <div class="flex items-center gap-4">
+          <!-- Menu Icon - Hamburger -->
+          <i class="ri-menu-fill text-white text-2xl lg:hidden"></i>
 
-        <!-- nav links -->
-        <ul class="hidden lg:flex items-center gap-6">
-          <li>
-            <a href="#" class="text-slate-400 transition-all hover:text-white"
-              >Docs</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-slate-400 transition-all hover:text-white"
-              >Updates</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-slate-400 transition-all hover:text-white"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-slate-400 transition-all hover:text-white"
-              >API</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-slate-400 transition-all hover:text-white"
-              >Extensions</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-slate-400 transition-all hover:text-white"
-              >FAQ</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-slate-400 transition-all hover:text-white"
-              >Learn</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="flex items-center gap-4">
-        <!-- Menu Icon - Hamburger -->
-        <i class="ri-menu-fill text-white text-2xl lg:hidden"></i>
+          <!-- Search -->
+          <i class="hidden lg:block ri-search-line text-slate-400 text-xl"></i>
 
-        <!-- Search -->
-        <i class="ri-search-line text-slate-400 text-xl"></i>
-
-        <!-- Download button -->
-        <div
-          class="flex items-center text-white gap-2 py-4 px-4 cursor-pointer bg-[#0066b8] hover:bg-[#005ba4]"
-        >
-          <i class="ri-download-line"></i>
-          <a href="#" class="font-medium">Download</a>
+          <!-- Download button -->
+          <div
+            class="hidden lg:flex items-center text-white gap-2 py-4 px-4 cursor-pointer bg-[#0066b8] hover:bg-[#005ba4]"
+          >
+            <i class="ri-download-line"></i>
+            <a href="#" class="font-medium">Download</a>
+          </div>
         </div>
       </div>
     </nav>
