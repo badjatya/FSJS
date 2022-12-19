@@ -70,7 +70,9 @@
         </div>
         <div class="flex items-center gap-4 xl:gap-0">
           <!-- Menu Icon - Hamburger -->
-          <i class="ri-menu-fill text-white text-2xl lg:hidden"></i>
+          <i
+            class="ri-menu-fill text-white text-2xl lg:hidden cursor-pointer hover:bg-[#0066b8] px-1 py-1 hover:rounded"
+          ></i>
 
           <!-- Search -->
           <i
@@ -79,12 +81,12 @@
 
           <!-- Search Input Container -->
           <div
-            class="hidden xl:flex items-center text-white gap-2 py-4 px-4 cursor-pointer bg-[rgba(255,255,255,.08)]"
+            class="hidden xl:flex items-center text-white gap-2 pt-4 pb-3 px-4 cursor-pointer bg-[rgba(255,255,255,.08)] hover:bg-[#ffffff2e] xl:cursor-text"
           >
             <i class="ri-search-line text-white text-lg"></i>
             <input
               type="text"
-              class="w-32 bg-transparent placeholder:text-white placeholder:font-light border-none focus:outline-none"
+              class="w-32 bg-transparent placeholder:text-white placeholder:text-sm placeholder:font-light border-none focus:outline-none"
               name="search"
               id="search"
               placeholder="Search Docs"
@@ -107,7 +109,7 @@
     <section class="bg-[#25252B] mt-14">
       <p class="lg:container mx-auto px-10 py-2 text-center text-slate-300">
         <a
-          class="text-[#0098ff]"
+          class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
           href="https://code.visualstudio.com/updates/v1_74"
           >Version 1.74</a
         >
@@ -152,16 +154,30 @@
           <p
             class="bg-[#25252B] text-gray-400 text-xs px-12 mt-2 py-2 rounded-lg lg:px-4 xl:text-sm"
           >
-            <a class="text-[#0098ff]" href="#">Web</a>,
-            <a class="text-[#0098ff]" href="#">Insiders edition</a>, or
-            <a class="text-[#0098ff]" href="#">other platforms</a>
+            <a
+              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+              href="#"
+              >Web</a
+            >,
+            <a
+              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+              href="#"
+              >Insiders edition</a
+            >, or
+            <a
+              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+              href="#"
+              >other platforms</a
+            >
           </p>
           <div class="my-3">
             <p class="text-xs text-gray-400 text-center xl:text-sm">
               By using VS Code, you agree to its
             </p>
             <p class="text-xs text-center xl:text-sm">
-              <a class="text-[#0098ff]" href="#"
+              <a
+                class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                href="#"
                 >license and privacy statement.</a
               >
             </p>
