@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Nav Starts -->
-    <nav class="bg-[#2C2C32]">
+    <nav class="bg-[#2C2C32] fixed top-0 left-0 right-0 w-full">
       <div
         class="lg:container m-auto flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10 xl:px-16 2xl:px-44"
       >
@@ -104,7 +104,7 @@
     <!-- Nav Ends -->
 
     <!-- Section Version Starts -->
-    <section class="bg-[#25252B]">
+    <section class="bg-[#25252B] mt-14">
       <p class="lg:container mx-auto px-10 py-2 text-center text-slate-300">
         <a
           class="text-[#0098ff]"
@@ -117,23 +117,31 @@
     <!-- Section Version Ends -->
 
     <!-- Main Section Starts -->
-    <main class="bg-[#2c2c32] w-full h-screen px-4">
-      <div class="main flex flex-col">
+    <main class="bg-[#2c2c32] w-full px-4">
+      <div
+        class="lg:container lg:mx-auto flex flex-col lg:flex-row lg:w-11/12 lg:mx-auto lg:gap-8 lg:py-12 lg:items-start xl:gap-0"
+      >
         <!-- Left Container and top container in smaller device -->
-        <div class="flex flex-col items-center">
-          <h1 class="text-white text-center text-5xl pt-4 font-light">
+        <div class="flex flex-col items-center lg:w-2/5">
+          <h1 class="text-white text-center text-5xl pt-4 font-light xl:mb-2">
             Code editing. <br class="hidden md:block" />
             <span class="font-normal">Redefined.</span>
           </h1>
-          <p class="text-center px-2 text-gray-400 py-2 text-base">
+          <p
+            class="text-center px-2 text-gray-400 py-2 text-base lg:text-lg xl:mb-2"
+          >
             Free. Built on open source. Runs everywhere.
           </p>
           <button
             class="flex items-center my-2 bg-[#0066b8] text-white cursor-pointer"
           >
-            <div class="px-14 py-2 hover:bg-[#005ba4]">
-              <p class="text-sm font-bold">Download for Windows</p>
-              <p class="text-xs">Stable Build</p>
+            <div class="px-14 py-2 hover:bg-[#005ba4] lg:px-4 xl:px-6">
+              <p
+                class="text-sm font-bold lg:text-base xl:text-lg xl:font-normal"
+              >
+                Download for Windows
+              </p>
+              <p class="text-xs xl:text-base">Stable Build</p>
             </div>
             <div
               class="flex item-center justify-center border-solid border-l-2 border-[#2c2c32] hover:bg-[#005ba4]"
@@ -142,17 +150,17 @@
             </div>
           </button>
           <p
-            class="bg-[#25252B] text-gray-400 text-xs px-12 mt-2 py-2 rounded-lg"
+            class="bg-[#25252B] text-gray-400 text-xs px-12 mt-2 py-2 rounded-lg lg:px-4 xl:text-sm"
           >
             <a class="text-[#0098ff]" href="#">Web</a>,
             <a class="text-[#0098ff]" href="#">Insiders edition</a>, or
             <a class="text-[#0098ff]" href="#">other platforms</a>
           </p>
           <div class="my-3">
-            <p class="text-xs text-gray-400 text-center">
+            <p class="text-xs text-gray-400 text-center xl:text-sm">
               By using VS Code, you agree to its
             </p>
-            <p class="text-xs text-center">
+            <p class="text-xs text-center xl:text-sm">
               <a class="text-[#0098ff]" href="#"
                 >license and privacy statement.</a
               >
@@ -160,7 +168,9 @@
           </div>
         </div>
         <!-- Right container -->
-        <div class="mt-4 mx-2 md:w-9/12 md:mx-auto">
+        <div
+          class="mt-4 mx-2 md:w-9/12 md:mx-auto lg:w-3/5 xl:w-3/6 2xl:ml-[-3.5rem]"
+        >
           <img class="w-full" src="./assets/header.jpg" alt="Header" />
         </div>
       </div>
