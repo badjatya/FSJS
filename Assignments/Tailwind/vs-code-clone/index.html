@@ -104,7 +104,7 @@
     <!-- Nav Ends -->
 
     <!-- Section Version Starts -->
-    <section class="version bg-[#25252B]">
+    <section class="bg-[#25252B]">
       <p class="lg:container mx-auto px-10 py-2 text-center text-slate-300">
         <a
           class="text-[#0098ff]"
@@ -121,31 +121,47 @@
       <div class="main flex flex-col">
         <!-- Left Container and top container in smaller device -->
         <div class="flex flex-col items-center">
-          <h1 class="text-white text-center text-4xl pt-4 font-light">
-            Code editing. <span class="font-normal">Redefined.</span>
+          <h1 class="text-white text-center text-5xl pt-4 font-light">
+            Code editing. <br class="hidden md:block" />
+            <span class="font-normal">Redefined.</span>
           </h1>
           <p class="text-center px-2 text-gray-400 py-2 text-base">
             Free. Built on open source. Runs everywhere.
           </p>
-          <button class="button">
-            <div>
-              <p>Download for Windows</p>
-              <p>Stable Build</p>
+          <button
+            class="flex items-center my-2 bg-[#0066b8] text-white cursor-pointer"
+          >
+            <div class="px-14 py-2 hover:bg-[#005ba4]">
+              <p class="text-sm font-bold">Download for Windows</p>
+              <p class="text-xs">Stable Build</p>
             </div>
-            <div>
-              <i class="ri-arrow-down-s-line"></i>
+            <div
+              class="flex item-center justify-center border-solid border-l-2 border-[#2c2c32] hover:bg-[#005ba4]"
+            >
+              <i class="ri-arrow-down-s-line text-4xl"></i>
             </div>
           </button>
-          <p>
-            <a href="#">Web</a>, <a href="#">Insiders edition</a>, or
-            <a href="#">other platforms</a>
+          <p
+            class="bg-[#25252B] text-gray-400 text-xs px-12 mt-2 py-2 rounded-lg"
+          >
+            <a class="text-[#0098ff]" href="#">Web</a>,
+            <a class="text-[#0098ff]" href="#">Insiders edition</a>, or
+            <a class="text-[#0098ff]" href="#">other platforms</a>
           </p>
-          <p>By using VS Code, you agree to its</p>
-          <p><a href="#">license and privacy statement.</a></p>
+          <div class="my-3">
+            <p class="text-xs text-gray-400 text-center">
+              By using VS Code, you agree to its
+            </p>
+            <p class="text-xs text-center">
+              <a class="text-[#0098ff]" href="#"
+                >license and privacy statement.</a
+              >
+            </p>
+          </div>
         </div>
         <!-- Right container -->
-        <div class="right">
-          <img src="./assets/header.jpg" alt="Header" />
+        <div class="mt-4 mx-2 md:w-9/12 md:mx-auto">
+          <img class="w-full" src="./assets/header.jpg" alt="Header" />
         </div>
       </div>
     </main>
