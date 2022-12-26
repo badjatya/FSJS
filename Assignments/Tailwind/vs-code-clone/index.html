@@ -1,482 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Remix Icon -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+        <!-- Remix Icon -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Visual Studio Code - Code Editing. Redefined</title>
-  </head>
-  <body>
-    <!-- Nav Starts -->
-    <nav class="bg-[#2C2C32] fixed top-0 left-0 right-0 w-full z-10">
-      <div
-        class="lg:container m-auto flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10 xl:px-16 2xl:px-44"
-      >
-        <div class="flex items-center gap-6">
-          <!-- Logo Container -->
-          <div class="flex items-center gap-4 cursor-pointer">
-            <img class="w-6" src="./assets/vscode.svg" alt="vs code logo" />
-            <p class="text-white text-xl">Visual Studio Code</p>
-          </div>
-
-          <!-- nav links -->
-          <ul class="hidden lg:flex items-center gap-6">
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Docs</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Updates</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >API</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Extensions</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >FAQ</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Learn</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="flex items-center gap-4 xl:gap-0">
-          <!-- Menu Icon - Hamburger -->
-          <i
-            class="ri-menu-fill text-white text-2xl lg:hidden cursor-pointer hover:bg-[#0066b8] px-1 py-1 hover:rounded"
-          ></i>
-
-          <!-- Search -->
-          <i
-            class="hidden lg:block xl:hidden ri-search-line text-slate-400 text-xl"
-          ></i>
-
-          <!-- Search Input Container -->
-          <div
-            class="hidden xl:flex items-center text-white gap-2 pt-4 pb-3 px-4 cursor-pointer bg-[rgba(255,255,255,.08)] hover:bg-[#ffffff2e] xl:cursor-text"
-          >
-            <i class="ri-search-line text-white text-lg"></i>
-            <input
-              type="text"
-              class="w-32 bg-transparent placeholder:text-white placeholder:text-sm placeholder:font-light border-none focus:outline-none"
-              name="search"
-              id="search"
-              placeholder="Search Docs"
-            />
-          </div>
-
-          <!-- Download button -->
-          <div
-            class="hidden lg:flex items-center text-white gap-2 py-4 px-4 cursor-pointer bg-[#0066b8] hover:bg-[#005ba4]"
-          >
-            <i class="ri-download-line"></i>
-            <a href="#" class="font-medium">Download</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Nav Ends -->
-
-    <!-- Section Version Starts -->
-    <section class="bg-[#25252B] mt-14">
-      <p class="lg:container mx-auto px-10 py-2 text-center text-slate-300">
-        <a
-          class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-          href="https://code.visualstudio.com/updates/v1_74"
-          >Version 1.74</a
-        >
-        is now available! Read about the new features and fixes from November.
-      </p>
-    </section>
-    <!-- Section Version Ends -->
-
-    <!-- Main Section Starts -->
-    <main class="bg-[#2c2c32] w-full px-4">
-      <div
-        class="lg:container lg:mx-auto flex flex-col lg:flex-row lg:w-11/12 lg:mx-auto lg:gap-8 lg:py-12 lg:items-start xl:gap-0"
-      >
-        <!-- Left Container and top container in smaller device -->
-        <div class="flex flex-col items-center lg:w-2/5">
-          <h1 class="text-white text-center text-5xl pt-4 font-light xl:mb-2">
-            Code editing. <br class="hidden md:block" />
-            <span class="font-normal">Redefined.</span>
-          </h1>
-          <p
-            class="text-center px-2 text-gray-400 py-2 text-base lg:text-lg xl:mb-2"
-          >
-            Free. Built on open source. Runs everywhere.
-          </p>
-          <button
-            class="flex items-center my-2 bg-[#0066b8] text-white cursor-pointer"
-          >
-            <div class="px-14 py-2 hover:bg-[#005ba4] lg:px-4 xl:px-6">
-              <p
-                class="text-sm font-bold lg:text-base xl:text-lg xl:font-normal"
-              >
-                Download for Windows
-              </p>
-              <p class="text-xs xl:text-base">Stable Build</p>
-            </div>
+        <title>Visual Studio Code - Code Editing. Redefined</title>
+    </head>
+    <body>
+        <!-- Nav Starts -->
+        <nav class="bg-[#2C2C32] fixed top-0 left-0 right-0 w-full z-10">
             <div
-              class="flex item-center justify-center border-solid border-l-2 border-[#2c2c32] hover:bg-[#005ba4]"
+                class="lg:container m-auto flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10 xl:px-16 2xl:px-44"
             >
-              <i class="ri-arrow-down-s-line text-4xl"></i>
+                <div class="flex items-center gap-6">
+                    <!-- Logo Container -->
+                    <div class="flex items-center gap-4 cursor-pointer">
+                        <img
+                            class="w-6"
+                            src="./assets/vscode.svg"
+                            alt="vs code logo"
+                        />
+                        <p class="text-white text-xl">Visual Studio Code</p>
+                    </div>
+
+                    <!-- nav links -->
+                    <ul class="hidden lg:flex items-center gap-6">
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Docs</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Updates</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Blog</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >API</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Extensions</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >FAQ</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Learn</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-4 xl:gap-0">
+                    <!-- Menu Icon - Hamburger -->
+                    <i
+                        class="ri-menu-fill text-white text-2xl lg:hidden cursor-pointer hover:bg-[#0066b8] px-1 py-1 hover:rounded"
+                    ></i>
+
+                    <!-- Search -->
+                    <i
+                        class="hidden lg:block xl:hidden ri-search-line text-slate-400 text-xl"
+                    ></i>
+
+                    <!-- Search Input Container -->
+                    <div
+                        class="hidden xl:flex items-center text-white gap-2 pt-4 pb-3 px-4 cursor-pointer bg-[rgba(255,255,255,.08)] hover:bg-[#ffffff2e] xl:cursor-text"
+                    >
+                        <i class="ri-search-line text-white text-lg"></i>
+                        <input
+                            type="text"
+                            class="w-32 bg-transparent placeholder:text-white placeholder:text-sm placeholder:font-light border-none focus:outline-none"
+                            name="search"
+                            id="search"
+                            placeholder="Search Docs"
+                        />
+                    </div>
+
+                    <!-- Download button -->
+                    <div
+                        class="hidden lg:flex items-center text-white gap-2 py-4 px-4 cursor-pointer bg-[#0066b8] hover:bg-[#005ba4]"
+                    >
+                        <i class="ri-download-line"></i>
+                        <a href="#" class="font-medium">Download</a>
+                    </div>
+                </div>
             </div>
-          </button>
-          <p
-            class="bg-[#25252B] text-gray-400 text-xs px-12 mt-2 py-2 rounded-lg lg:px-4 xl:text-sm"
-          >
-            <a
-              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-              href="#"
-              >Web</a
-            >,
-            <a
-              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-              href="#"
-              >Insiders edition</a
-            >, or
-            <a
-              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-              href="#"
-              >other platforms</a
+        </nav>
+        <!-- Nav Ends -->
+
+        <!-- Section Version Starts -->
+        <section class="bg-[#25252B] mt-14">
+            <p
+                class="lg:container mx-auto px-10 py-2 text-center text-slate-300"
             >
-          </p>
-          <div class="my-3">
-            <p class="text-xs text-gray-400 text-center xl:text-sm">
-              By using VS Code, you agree to its
+                <a
+                    class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                    href="https://code.visualstudio.com/updates/v1_74"
+                    >Version 1.74</a
+                >
+                is now available! Read about the new features and fixes from
+                November.
             </p>
-            <p class="text-xs text-center xl:text-sm">
-              <a
-                class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-                href="#"
-                >license and privacy statement.</a
-              >
-            </p>
-          </div>
-        </div>
-        <!-- Right container -->
-        <div
-          class="mt-4 mx-2 md:w-9/12 md:mx-auto lg:w-3/5 xl:w-3/6 2xl:ml-[-3.5rem]"
-        >
-          <img class="w-full" src="./assets/header.jpg" alt="Header" />
-        </div>
-      </div>
-    </main>
-    <!-- Main Section Ends -->
+        </section>
+        <!-- Section Version Ends -->
 
-    <!-- Section Icon Starts -->
-    <section class="lg:container lg:mx-auto">
-      <div class="grid grid-cols-2 px-4 md:grid-cols-4 lg:px-40">
-        <div
-          class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
-        >
-          <i
-            class="ri-lightbulb-line text-5xl py-2 font-thin group-hover:text-blue-500"
-          ></i>
-          <p class="text-sm lg:text-lg">IntelliSense</p>
-        </div>
-        <div
-          class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
-        >
-          <i
-            class="ri-bug-line text-5xl py-2 font-thin group-hover:text-green-500"
-          ></i>
-          <p class="text-sm lg:text-lg">Run and Debug</p>
-        </div>
-        <div
-          class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
-        >
-          <i
-            class="ri-git-branch-line text-5xl py-2 font-thin group-hover:text-red-400"
-          ></i>
-          <p class="text-sm lg:text-lg">Built-in Git</p>
-        </div>
-        <div
-          class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
-        >
-          <i
-            class="ri-microsoft-line text-5xl py-2 font-thin group-hover:text-dark"
-          ></i>
-          <p class="text-sm lg:text-lg">Extensions</p>
-        </div>
-      </div>
-    </section>
-    <!-- Section Icon Ends -->
-
-    <!-- Section Testimonials Starts -->
-    <section class="bg-[#f5f5f5] py-16 flex items-center justify-center">
-      <div class="lg:container lg:mx-auto flex items-center px-12">
-        <i class="ri-arrow-left-s-line text-4xl text-gray-500"></i>
-        <div class="flex flex-col items-center gap-8 lg:flex-row">
-          <div class="grid grid-cols-6">
-            <img
-              class="w-20 block rounded-full col-span-1 cursor-pointer pr-2"
-              src="https://randomuser.me/api/portraits/men/92.jpg"
-              alt="person"
-            />
-            <div class="relative col-span-5">
-              <h4
-                class="text-xs font-bold leading-6 hover:text-blue-500 cursor-pointer"
-              >
-                Una Kravets
-              </h4>
-              <p class="text-xs my-1 cursor-pointer text-[#444]">@Una</p>
-              <p class="text-[#444] text-base">
-                VS code does so many things right. I m constantly impressed by
-                the UX, and customizing workspace / user preferences is no
-                exception. 🙌🏼💯 It just keeps getting better ❤️
-              </p>
-              <i
-                class="ri-twitter-fill cursor-pointer absolute top-0 right-0 text-[#8C8C8C]"
-              ></i>
+        <!-- Main Section Starts -->
+        <main class="bg-[#2c2c32] w-full px-4">
+            <div
+                class="lg:container lg:mx-auto flex flex-col lg:flex-row lg:w-11/12 lg:mx-auto lg:gap-8 lg:py-12 lg:items-start xl:gap-0"
+            >
+                <!-- Left Container and top container in smaller device -->
+                <div class="flex flex-col items-center lg:w-2/5">
+                    <h1
+                        class="text-white text-center text-5xl pt-4 font-light xl:mb-2"
+                    >
+                        Code editing. <br class="hidden md:block" />
+                        <span class="font-normal">Redefined.</span>
+                    </h1>
+                    <p
+                        class="text-center px-2 text-gray-400 py-2 text-base lg:text-lg xl:mb-2"
+                    >
+                        Free. Built on open source. Runs everywhere.
+                    </p>
+                    <button
+                        class="flex items-center my-2 bg-[#0066b8] text-white cursor-pointer"
+                    >
+                        <div
+                            class="px-14 py-2 hover:bg-[#005ba4] lg:px-4 xl:px-6"
+                        >
+                            <p
+                                class="text-sm font-bold lg:text-base xl:text-lg xl:font-normal"
+                            >
+                                Download for Windows
+                            </p>
+                            <p class="text-xs xl:text-base">Stable Build</p>
+                        </div>
+                        <div
+                            class="flex item-center justify-center border-solid border-l-2 border-[#2c2c32] hover:bg-[#005ba4]"
+                        >
+                            <i class="ri-arrow-down-s-line text-4xl"></i>
+                        </div>
+                    </button>
+                    <p
+                        class="bg-[#25252B] text-gray-400 text-xs px-12 mt-2 py-2 rounded-lg lg:px-4 xl:text-sm"
+                    >
+                        <a
+                            class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                            href="#"
+                            >Web</a
+                        >,
+                        <a
+                            class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                            href="#"
+                            >Insiders edition</a
+                        >, or
+                        <a
+                            class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                            href="#"
+                            >other platforms</a
+                        >
+                    </p>
+                    <div class="my-3">
+                        <p class="text-xs text-gray-400 text-center xl:text-sm">
+                            By using VS Code, you agree to its
+                        </p>
+                        <p class="text-xs text-center xl:text-sm">
+                            <a
+                                class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                                href="#"
+                                >license and privacy statement.</a
+                            >
+                        </p>
+                    </div>
+                </div>
+                <!-- Right container -->
+                <div
+                    class="mt-4 mx-2 md:w-9/12 md:mx-auto lg:w-3/5 xl:w-3/6 2xl:ml-[-3.5rem]"
+                >
+                    <img
+                        class="w-full"
+                        src="./assets/header.jpg"
+                        alt="Header"
+                    />
+                </div>
             </div>
-          </div>
-          <div class="grid grid-cols-6">
-            <img
-              class="w-20 block rounded-full col-span-1 cursor-pointer pr-2"
-              src="https://randomuser.me/api/portraits/men/92.jpg"
-              alt="person"
-            />
-            <div class="relative col-span-5">
-              <h4
-                class="text-xs font-bold leading-6 hover:text-blue-500 cursor-pointer"
-              >
-                Una Kravets
-              </h4>
-              <p class="text-xs my-1 cursor-pointer text-[#444]">@Una</p>
-              <p class="text-[#444] text-base">
-                VS code does so many things right. I m constantly impressed by
-                the UX, and customizing workspace / user preferences is no
-                exception. 🙌🏼💯 It just keeps getting better ❤️
-              </p>
-              <i
-                class="ri-twitter-fill cursor-pointer absolute top-0 right-0 text-[#8C8C8C]"
-              ></i>
+        </main>
+        <!-- Main Section Ends -->
+
+        <!-- Section Icon Starts -->
+        <section class="lg:container lg:mx-auto">
+            <div class="grid grid-cols-2 px-4 md:grid-cols-4 lg:px-40">
+                <div
+                    class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
+                >
+                    <i
+                        class="ri-lightbulb-line text-5xl py-2 font-thin group-hover:text-blue-500"
+                    ></i>
+                    <p class="text-sm lg:text-lg">IntelliSense</p>
+                </div>
+                <div
+                    class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
+                >
+                    <i
+                        class="ri-bug-line text-5xl py-2 font-thin group-hover:text-green-500"
+                    ></i>
+                    <p class="text-sm lg:text-lg">Run and Debug</p>
+                </div>
+                <div
+                    class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
+                >
+                    <i
+                        class="ri-git-branch-line text-5xl py-2 font-thin group-hover:text-red-400"
+                    ></i>
+                    <p class="text-sm lg:text-lg">Built-in Git</p>
+                </div>
+                <div
+                    class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
+                >
+                    <i
+                        class="ri-microsoft-line text-5xl py-2 font-thin group-hover:text-dark"
+                    ></i>
+                    <p class="text-sm lg:text-lg">Extensions</p>
+                </div>
             </div>
-          </div>
-          <div class="grid grid-cols-6">
-            <img
-              class="w-20 block rounded-full col-span-1 cursor-pointer pr-2"
-              src="https://randomuser.me/api/portraits/men/92.jpg"
-              alt="person"
-            />
-            <div class="relative col-span-5">
-              <h4
-                class="text-xs font-bold leading-6 hover:text-blue-500 cursor-pointer"
-              >
-                Una Kravets
-              </h4>
-              <p class="text-xs my-1 cursor-pointer text-[#444]">@Una</p>
-              <p class="text-[#444] text-base">
-                VS code does so many things right. I m constantly impressed by
-                the UX, and customizing workspace / user preferences is no
-                exception. 🙌🏼💯 It just keeps getting better ❤️
-              </p>
-              <i
-                class="ri-twitter-fill cursor-pointer absolute top-0 right-0 text-[#8C8C8C]"
-              ></i>
+        </section>
+        <!-- Section Icon Ends -->
+
+        <!-- Section Testimonials Starts -->
+        <section class="bg-[#f5f5f5] py-16 flex items-center justify-center">
+            <div class="lg:container lg:mx-auto flex items-center px-12">
+                <i class="ri-arrow-left-s-line text-4xl text-gray-500"></i>
+                <div class="flex flex-col items-center gap-8 lg:flex-row">
+                    <div class="grid grid-cols-6">
+                        <img
+                            class="w-20 block rounded-full col-span-1 cursor-pointer pr-2"
+                            src="https://randomuser.me/api/portraits/men/92.jpg"
+                            alt="person"
+                        />
+                        <div class="relative col-span-5">
+                            <h4
+                                class="text-xs font-bold leading-6 hover:text-blue-500 cursor-pointer"
+                            >
+                                Una Kravets
+                            </h4>
+                            <p class="text-xs my-1 cursor-pointer text-[#444]">
+                                @Una
+                            </p>
+                            <p class="text-[#444] text-base">
+                                VS code does so many things right. I m
+                                constantly impressed by the UX, and customizing
+                                workspace / user preferences is no exception.
+                                🙌🏼💯 It just keeps getting better ❤️
+                            </p>
+                            <i
+                                class="ri-twitter-fill cursor-pointer absolute top-0 right-0 text-[#8C8C8C]"
+                            ></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6">
+                        <img
+                            class="w-20 block rounded-full col-span-1 cursor-pointer pr-2"
+                            src="https://randomuser.me/api/portraits/men/92.jpg"
+                            alt="person"
+                        />
+                        <div class="relative col-span-5">
+                            <h4
+                                class="text-xs font-bold leading-6 hover:text-blue-500 cursor-pointer"
+                            >
+                                Una Kravets
+                            </h4>
+                            <p class="text-xs my-1 cursor-pointer text-[#444]">
+                                @Una
+                            </p>
+                            <p class="text-[#444] text-base">
+                                VS code does so many things right. I m
+                                constantly impressed by the UX, and customizing
+                                workspace / user preferences is no exception.
+                                🙌🏼💯 It just keeps getting better ❤️
+                            </p>
+                            <i
+                                class="ri-twitter-fill cursor-pointer absolute top-0 right-0 text-[#8C8C8C]"
+                            ></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6">
+                        <img
+                            class="w-20 block rounded-full col-span-1 cursor-pointer pr-2"
+                            src="https://randomuser.me/api/portraits/men/92.jpg"
+                            alt="person"
+                        />
+                        <div class="relative col-span-5">
+                            <h4
+                                class="text-xs font-bold leading-6 hover:text-blue-500 cursor-pointer"
+                            >
+                                Una Kravets
+                            </h4>
+                            <p class="text-xs my-1 cursor-pointer text-[#444]">
+                                @Una
+                            </p>
+                            <p class="text-[#444] text-base">
+                                VS code does so many things right. I m
+                                constantly impressed by the UX, and customizing
+                                workspace / user preferences is no exception.
+                                🙌🏼💯 It just keeps getting better ❤️
+                            </p>
+                            <i
+                                class="ri-twitter-fill cursor-pointer absolute top-0 right-0 text-[#8C8C8C]"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                <i class="ri-arrow-right-s-line text-4xl text-gray-500"></i>
             </div>
-          </div>
-        </div>
-        <i class="ri-arrow-right-s-line text-4xl text-gray-500"></i>
-      </div>
-    </section>
-    <!-- Section Testimonials Ends -->
+        </section>
+        <!-- Section Testimonials Ends -->
 
-    <!-- Section Feature-1 Starts -->
-    <section class="">
-      <div
-        class="flex flex-col py-12 md:flex-row md:gap-12 lg:gap-0 lg:container lg:mx-auto"
-      >
-        <div
-          class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
-        >
-          <img
-            class="w-full"
-            src="https://code.visualstudio.com/assets/images/home-intellisense.svg"
-            alt="Meet IntelliSense Svg"
-          />
-        </div>
+        <!-- Section Feature-1 Starts -->
+        <section class="">
+            <div
+                class="flex flex-col py-12 md:flex-row md:gap-12 lg:gap-0 lg:container lg:mx-auto"
+            >
+                <div
+                    class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
+                >
+                    <img
+                        class="w-full"
+                        src="https://code.visualstudio.com/assets/images/home-intellisense.svg"
+                        alt="Meet IntelliSense Svg"
+                    />
+                </div>
 
-        <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
-          <h3
-            class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
-          >
-            Meet IntelliSense.
-          </h3>
-          <p
-            class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
-          >
-            Go beyond syntax highlighting and autocomplete with IntelliSense,
-            which provides smart completions based on variable types, function
-            definitions, and imported modules.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Section Feature-1 Ends -->
+                <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
+                    <h3
+                        class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
+                    >
+                        Meet IntelliSense.
+                    </h3>
+                    <p
+                        class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
+                    >
+                        Go beyond syntax highlighting and autocomplete with
+                        IntelliSense, which provides smart completions based on
+                        variable types, function definitions, and imported
+                        modules.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section Feature-1 Ends -->
 
-    <!-- Section Feature-2 Starts -->
-    <section class="bg-[#f5f5f5]">
-      <div
-        class="lg:container lg:mx-auto flex flex-col py-12 md:flex-row-reverse md:gap-12 lg:gap-0"
-      >
-        <div
-          class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
-        >
-          <img
-            class="w-full"
-            src="https://code.visualstudio.com/assets/images/home-debug.svg"
-            alt="Meet IntelliSense Svg"
-          />
-        </div>
+        <!-- Section Feature-2 Starts -->
+        <section class="bg-[#f5f5f5]">
+            <div
+                class="lg:container lg:mx-auto flex flex-col py-12 md:flex-row-reverse md:gap-12 lg:gap-0"
+            >
+                <div
+                    class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
+                >
+                    <img
+                        class="w-full"
+                        src="https://code.visualstudio.com/assets/images/home-debug.svg"
+                        alt="Meet IntelliSense Svg"
+                    />
+                </div>
 
-        <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
-          <h3
-            class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
-          >
-            Print statement debugging is a thing of the past.
-          </h3>
-          <p
-            class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
-          >
-            Debug code right from the editor. Launch or attach to your running
-            apps and debug with break points, call stacks, and an interactive
-            console.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Section Feature-2 Ends -->
+                <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
+                    <h3
+                        class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
+                    >
+                        Print statement debugging is a thing of the past.
+                    </h3>
+                    <p
+                        class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
+                    >
+                        Debug code right from the editor. Launch or attach to
+                        your running apps and debug with break points, call
+                        stacks, and an interactive console.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section Feature-2 Ends -->
 
-    <!-- Section Feature-3 Starts -->
-    <section class="">
-      <div
-        class="lg:container lg:mx-auto flex flex-col py-12 md:flex-row md:gap-12 lg:gap-0"
-      >
-        <div
-          class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
-        >
-          <img
-            class="w-full"
-            src="https://code.visualstudio.com/assets/images/home-git.svg"
-            alt="Git commands built-in Svg"
-          />
-        </div>
+        <!-- Section Feature-3 Starts -->
+        <section class="">
+            <div
+                class="lg:container lg:mx-auto flex flex-col py-12 md:flex-row md:gap-12 lg:gap-0"
+            >
+                <div
+                    class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
+                >
+                    <img
+                        class="w-full"
+                        src="https://code.visualstudio.com/assets/images/home-git.svg"
+                        alt="Git commands built-in Svg"
+                    />
+                </div>
 
-        <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
-          <h3
-            class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
-          >
-            Git commands built-in.
-          </h3>
-          <p
-            class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
-          >
-            Working with Git and other SCM providers has never been easier.
-            Review diffs, stage files, and make commits right from the editor.
-            Push and pull from any hosted SCM service.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Section Feature-3 Ends -->
+                <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
+                    <h3
+                        class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
+                    >
+                        Git commands built-in.
+                    </h3>
+                    <p
+                        class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
+                    >
+                        Working with Git and other SCM providers has never been
+                        easier. Review diffs, stage files, and make commits
+                        right from the editor. Push and pull from any hosted SCM
+                        service.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section Feature-3 Ends -->
 
-    <!-- Section Feature-4 Starts -->
-    <section class="bg-[#f5f5f5]">
-      <div
-        class="lg:container lg:mx-auto flex flex-col py-12 md:flex-row-reverse md:gap-12 lg:gap-0"
-      >
-        <div
-          class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
-        >
-          <img
-            class="w-full"
-            src="https://code.visualstudio.com/assets/images/Hundreds-of-Extensions.png"
-            alt="Meet IntelliSense Svg"
-          />
-        </div>
+        <!-- Section Feature-4 Starts -->
+        <section class="bg-[#f5f5f5]">
+            <div
+                class="lg:container lg:mx-auto flex flex-col py-12 md:flex-row-reverse md:gap-12 lg:gap-0"
+            >
+                <div
+                    class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
+                >
+                    <img
+                        class="w-full"
+                        src="https://code.visualstudio.com/assets/images/Hundreds-of-Extensions.png"
+                        alt="Meet IntelliSense Svg"
+                    />
+                </div>
 
-        <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
-          <h3
-            class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
-          >
-            Print statement debugging is a thing of the past.
-          </h3>
-          <p
-            class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
-          >
-            Want even more features? Install extensions to add new languages,
-            themes, debuggers, and to connect to additional services. Extensions
-            run in separate processes, ensuring they won't slow down your
-            editor. <a href="#">Learn more about extensions.</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Section Feature-4 Ends -->
+                <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
+                    <h3
+                        class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
+                    >
+                        Print statement debugging is a thing of the past.
+                    </h3>
+                    <p
+                        class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
+                    >
+                        Want even more features? Install extensions to add new
+                        languages, themes, debuggers, and to connect to
+                        additional services. Extensions run in separate
+                        processes, ensuring they won't slow down your editor.
+                        <a href="#">Learn more about extensions.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section Feature-4 Ends -->
 
-    <!-- Section Feature-3 Starts -->
-    <section class="">
-      <div
-        class="lg:container lg:mx-auto flex flex-col py-12 md:flex-row md:gap-12 lg:gap-0"
-      >
-        <div
-          class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
-        >
-          <img
-            class="w-full"
-            src="https://code.visualstudio.com/assets/images/home-azure.svg"
-            alt="Git commands built-in Svg"
-          />
-        </div>
+        <!-- Section Feature-3 Starts -->
+        <section class="">
+            <div
+                class="lg:container lg:mx-auto flex flex-col py-12 md:flex-row md:gap-12 lg:gap-0"
+            >
+                <div
+                    class="w-3/6 mx-auto md:w-4/6 md:mx-4 lg:mx-12 xl:w-2/6 2xl:w-1/4 2xl:mx-12"
+                >
+                    <img
+                        class="w-full"
+                        src="https://code.visualstudio.com/assets/images/home-azure.svg"
+                        alt="Git commands built-in Svg"
+                    />
+                </div>
 
-        <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
-          <h3
-            class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
-          >
-            Deploy with confidence and ease
-          </h3>
-          <p
-            class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
-          >
-            With <a href="#">Microsoft Azure</a> you can deploy and host your
-            React, Angular, Vue, Node, Python (and more!) sites, store and query
-            relational and document based data, and scale with serverless
-            computing, all with ease, <a href="#">all from within VS Code.</a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Section Feature-3 Ends -->
-  </body>
+                <div class="px-4 md:w-7/8 md:mx-4 lg:mx-12 xl:w-4/6 2xl:w-3/6">
+                    <h3
+                        class="text-[#444444] text-lg my-4 font-light md:mt-0 md:text-2xl lg:text-3xl 2xl:mb-8"
+                    >
+                        Deploy with confidence and ease
+                    </h3>
+                    <p
+                        class="text-[#444444] lg:text-lg leading-8 lg:leading-10 2xl:text-xl 2xl:leading-10"
+                    >
+                        With <a href="#">Microsoft Azure</a> you can deploy and
+                        host your React, Angular, Vue, Node, Python (and more!)
+                        sites, store and query relational and document based
+                        data, and scale with serverless computing, all with
+                        ease, <a href="#">all from within VS Code.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section Feature-3 Ends -->
+
+        <!-- Section Language Starts -->
+        <section class="bg-[#f5f5f5]">
+            <div
+                class="lg:container mx-auto py-12 px-4 flex flex-col items-center"
+            >
+                <h3 class="text-center text-lg font-light mb-8">VS Code for</h3>
+                <div class="flex items-center justify-around gap-20">
+                    <div class="flex flex-col gap-4 justify-self-start">
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/javascript.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">JavaScript</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/java.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">Java</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/typescript.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">TypeScript</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/json.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">JSON</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/html.svg"
+                                alt="js"
+                            />
+                            <p class="font-light">HTML/CSS</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/php.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">PHP</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/javascript.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">JavaScript</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/java.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">Java</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/typescript.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">TypeScript</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/json.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">JSON</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/html.svg"
+                                alt="js"
+                            />
+                            <p class="font-light">HTML/CSS</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img
+                                src="https://code.visualstudio.com/assets/icons/file-icons/php.svg"
+                                class=""
+                                alt="js"
+                            />
+                            <p class="font-light">PHP</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center my-8 text-[#005ba4] hover:underline">
+                    <a href="#"
+                        >and many more languages on the Marketplace...</a
+                    >
+                </p>
+
+                <div
+                    class="my-8 px-10 py-4 bg-[#005ba4] flex items-center justify-center cursor-pointer max-w-fit text-white"
+                >
+                    <p class="text-xl">Get Started Now</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section Language Ends -->
+    </body>
 </html>
