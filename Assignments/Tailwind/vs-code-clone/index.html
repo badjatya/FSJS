@@ -1,225 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Remix Icon -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+        <!-- Remix Icon -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Visual Studio Code - Code Editing. Redefined</title>
-  </head>
-  <body>
-    <!-- Nav Starts -->
-    <nav class="bg-[#2C2C32] fixed top-0 left-0 right-0 w-full">
-      <div
-        class="lg:container m-auto flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10 xl:px-16 2xl:px-44"
-      >
-        <div class="flex items-center gap-6">
-          <!-- Logo Container -->
-          <div class="flex items-center gap-4 cursor-pointer">
-            <img class="w-6" src="./assets/vscode.svg" alt="vs code logo" />
-            <p class="text-white text-xl">Visual Studio Code</p>
-          </div>
-
-          <!-- nav links -->
-          <ul class="hidden lg:flex items-center gap-6">
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Docs</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Updates</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >API</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Extensions</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >FAQ</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-slate-400 transition-all hover:text-white"
-                >Learn</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="flex items-center gap-4 xl:gap-0">
-          <!-- Menu Icon - Hamburger -->
-          <i
-            class="ri-menu-fill text-white text-2xl lg:hidden cursor-pointer hover:bg-[#0066b8] px-1 py-1 hover:rounded"
-          ></i>
-
-          <!-- Search -->
-          <i
-            class="hidden lg:block xl:hidden ri-search-line text-slate-400 text-xl"
-          ></i>
-
-          <!-- Search Input Container -->
-          <div
-            class="hidden xl:flex items-center text-white gap-2 pt-4 pb-3 px-4 cursor-pointer bg-[rgba(255,255,255,.08)] hover:bg-[#ffffff2e] xl:cursor-text"
-          >
-            <i class="ri-search-line text-white text-lg"></i>
-            <input
-              type="text"
-              class="w-32 bg-transparent placeholder:text-white placeholder:text-sm placeholder:font-light border-none focus:outline-none"
-              name="search"
-              id="search"
-              placeholder="Search Docs"
-            />
-          </div>
-
-          <!-- Download button -->
-          <div
-            class="hidden lg:flex items-center text-white gap-2 py-4 px-4 cursor-pointer bg-[#0066b8] hover:bg-[#005ba4]"
-          >
-            <i class="ri-download-line"></i>
-            <a href="#" class="font-medium">Download</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- Nav Ends -->
-
-    <!-- Section Version Starts -->
-    <section class="bg-[#25252B] mt-14">
-      <p class="lg:container mx-auto px-10 py-2 text-center text-slate-300">
-        <a
-          class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-          href="https://code.visualstudio.com/updates/v1_74"
-          >Version 1.74</a
-        >
-        is now available! Read about the new features and fixes from November.
-      </p>
-    </section>
-    <!-- Section Version Ends -->
-
-    <!-- Main Section Starts -->
-    <main class="bg-[#2c2c32] w-full px-4">
-      <div
-        class="lg:container lg:mx-auto flex flex-col lg:flex-row lg:w-11/12 lg:mx-auto lg:gap-8 lg:py-12 lg:items-start xl:gap-0"
-      >
-        <!-- Left Container and top container in smaller device -->
-        <div class="flex flex-col items-center lg:w-2/5">
-          <h1 class="text-white text-center text-5xl pt-4 font-light xl:mb-2">
-            Code editing. <br class="hidden md:block" />
-            <span class="font-normal">Redefined.</span>
-          </h1>
-          <p
-            class="text-center px-2 text-gray-400 py-2 text-base lg:text-lg xl:mb-2"
-          >
-            Free. Built on open source. Runs everywhere.
-          </p>
-          <button
-            class="flex items-center my-2 bg-[#0066b8] text-white cursor-pointer"
-          >
-            <div class="px-14 py-2 hover:bg-[#005ba4] lg:px-4 xl:px-6">
-              <p
-                class="text-sm font-bold lg:text-base xl:text-lg xl:font-normal"
-              >
-                Download for Windows
-              </p>
-              <p class="text-xs xl:text-base">Stable Build</p>
-            </div>
+        <title>Visual Studio Code - Code Editing. Redefined</title>
+    </head>
+    <body>
+        <!-- Nav Starts -->
+        <nav class="bg-[#2C2C32] fixed top-0 left-0 right-0 w-full">
             <div
-              class="flex item-center justify-center border-solid border-l-2 border-[#2c2c32] hover:bg-[#005ba4]"
+                class="lg:container m-auto flex items-center justify-between h-14 bg-[#2C2C32] px-4 lg:px-10 xl:px-16 2xl:px-44"
             >
-              <i class="ri-arrow-down-s-line text-4xl"></i>
-            </div>
-          </button>
-          <p
-            class="bg-[#25252B] text-gray-400 text-xs px-12 mt-2 py-2 rounded-lg lg:px-4 xl:text-sm"
-          >
-            <a
-              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-              href="#"
-              >Web</a
-            >,
-            <a
-              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-              href="#"
-              >Insiders edition</a
-            >, or
-            <a
-              class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-              href="#"
-              >other platforms</a
-            >
-          </p>
-          <div class="my-3">
-            <p class="text-xs text-gray-400 text-center xl:text-sm">
-              By using VS Code, you agree to its
-            </p>
-            <p class="text-xs text-center xl:text-sm">
-              <a
-                class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
-                href="#"
-                >license and privacy statement.</a
-              >
-            </p>
-          </div>
-        </div>
-        <!-- Right container -->
-        <div
-          class="mt-4 mx-2 md:w-9/12 md:mx-auto lg:w-3/5 xl:w-3/6 2xl:ml-[-3.5rem]"
-        >
-          <img class="w-full" src="./assets/header.jpg" alt="Header" />
-        </div>
-      </div>
-    </main>
-    <!-- Main Section Ends -->
+                <div class="flex items-center gap-6">
+                    <!-- Logo Container -->
+                    <div class="flex items-center gap-4 cursor-pointer">
+                        <img
+                            class="w-6"
+                            src="./assets/vscode.svg"
+                            alt="vs code logo"
+                        />
+                        <p class="text-white text-xl">Visual Studio Code</p>
+                    </div>
 
-    <!-- Section Card Starts -->
-    <section class="flex flex-wrap px-4 justify-between">
-      <div
-        class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center w-56 text-center text-base"
-      >
-        <i class="ri-lightbulb-line text-5xl py-2 font-thin"></i>
-        <p>IntelliSense</p>
-      </div>
-      <div
-        class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center w-56 text-center text-base"
-      >
-        <i class="ri-bug-line text-5xl py-2 font-thin"></i>
-        <p>Run and Debug</p>
-      </div>
-      <div
-        class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center w-56 text-center text-base"
-      >
-        <i class="ri-git-branch-line text-5xl py-2 font-thin"></i>
-        <p>Built-in Git</p>
-      </div>
-      <div
-        class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center w-56 text-center text-base"
-      >
-        <i class="ri-microsoft-line text-5xl py-2 font-thin"></i>
-        <p>Extensions</p>
-      </div>
-    </section>
-    <!-- Section Card Ends -->
-  </body>
+                    <!-- nav links -->
+                    <ul class="hidden lg:flex items-center gap-6">
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Docs</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Updates</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Blog</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >API</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Extensions</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >FAQ</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="text-slate-400 transition-all hover:text-white"
+                                >Learn</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-4 xl:gap-0">
+                    <!-- Menu Icon - Hamburger -->
+                    <i
+                        class="ri-menu-fill text-white text-2xl lg:hidden cursor-pointer hover:bg-[#0066b8] px-1 py-1 hover:rounded"
+                    ></i>
+
+                    <!-- Search -->
+                    <i
+                        class="hidden lg:block xl:hidden ri-search-line text-slate-400 text-xl"
+                    ></i>
+
+                    <!-- Search Input Container -->
+                    <div
+                        class="hidden xl:flex items-center text-white gap-2 pt-4 pb-3 px-4 cursor-pointer bg-[rgba(255,255,255,.08)] hover:bg-[#ffffff2e] xl:cursor-text"
+                    >
+                        <i class="ri-search-line text-white text-lg"></i>
+                        <input
+                            type="text"
+                            class="w-32 bg-transparent placeholder:text-white placeholder:text-sm placeholder:font-light border-none focus:outline-none"
+                            name="search"
+                            id="search"
+                            placeholder="Search Docs"
+                        />
+                    </div>
+
+                    <!-- Download button -->
+                    <div
+                        class="hidden lg:flex items-center text-white gap-2 py-4 px-4 cursor-pointer bg-[#0066b8] hover:bg-[#005ba4]"
+                    >
+                        <i class="ri-download-line"></i>
+                        <a href="#" class="font-medium">Download</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Ends -->
+
+        <!-- Section Version Starts -->
+        <section class="bg-[#25252B] mt-14">
+            <p
+                class="lg:container mx-auto px-10 py-2 text-center text-slate-300"
+            >
+                <a
+                    class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                    href="https://code.visualstudio.com/updates/v1_74"
+                    >Version 1.74</a
+                >
+                is now available! Read about the new features and fixes from
+                November.
+            </p>
+        </section>
+        <!-- Section Version Ends -->
+
+        <!-- Main Section Starts -->
+        <main class="bg-[#2c2c32] w-full px-4">
+            <div
+                class="lg:container lg:mx-auto flex flex-col lg:flex-row lg:w-11/12 lg:mx-auto lg:gap-8 lg:py-12 lg:items-start xl:gap-0"
+            >
+                <!-- Left Container and top container in smaller device -->
+                <div class="flex flex-col items-center lg:w-2/5">
+                    <h1
+                        class="text-white text-center text-5xl pt-4 font-light xl:mb-2"
+                    >
+                        Code editing. <br class="hidden md:block" />
+                        <span class="font-normal">Redefined.</span>
+                    </h1>
+                    <p
+                        class="text-center px-2 text-gray-400 py-2 text-base lg:text-lg xl:mb-2"
+                    >
+                        Free. Built on open source. Runs everywhere.
+                    </p>
+                    <button
+                        class="flex items-center my-2 bg-[#0066b8] text-white cursor-pointer"
+                    >
+                        <div
+                            class="px-14 py-2 hover:bg-[#005ba4] lg:px-4 xl:px-6"
+                        >
+                            <p
+                                class="text-sm font-bold lg:text-base xl:text-lg xl:font-normal"
+                            >
+                                Download for Windows
+                            </p>
+                            <p class="text-xs xl:text-base">Stable Build</p>
+                        </div>
+                        <div
+                            class="flex item-center justify-center border-solid border-l-2 border-[#2c2c32] hover:bg-[#005ba4]"
+                        >
+                            <i class="ri-arrow-down-s-line text-4xl"></i>
+                        </div>
+                    </button>
+                    <p
+                        class="bg-[#25252B] text-gray-400 text-xs px-12 mt-2 py-2 rounded-lg lg:px-4 xl:text-sm"
+                    >
+                        <a
+                            class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                            href="#"
+                            >Web</a
+                        >,
+                        <a
+                            class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                            href="#"
+                            >Insiders edition</a
+                        >, or
+                        <a
+                            class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                            href="#"
+                            >other platforms</a
+                        >
+                    </p>
+                    <div class="my-3">
+                        <p class="text-xs text-gray-400 text-center xl:text-sm">
+                            By using VS Code, you agree to its
+                        </p>
+                        <p class="text-xs text-center xl:text-sm">
+                            <a
+                                class="text-[#0098ff] hover:border-b-2 hover:border-[#0098ff]"
+                                href="#"
+                                >license and privacy statement.</a
+                            >
+                        </p>
+                    </div>
+                </div>
+                <!-- Right container -->
+                <div
+                    class="mt-4 mx-2 md:w-9/12 md:mx-auto lg:w-3/5 xl:w-3/6 2xl:ml-[-3.5rem]"
+                >
+                    <img
+                        class="w-full"
+                        src="./assets/header.jpg"
+                        alt="Header"
+                    />
+                </div>
+            </div>
+        </main>
+        <!-- Main Section Ends -->
+
+        <!-- Section Icon Starts -->
+        <section class="lg:container lg:mx-auto">
+            <div class="grid grid-cols-2 px-4 md:grid-cols-4 lg:px-40">
+                <div
+                    class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
+                >
+                    <i
+                        class="ri-lightbulb-line text-5xl py-2 font-thin group-hover:text-blue-500"
+                    ></i>
+                    <p class="text-sm lg:text-lg">IntelliSense</p>
+                </div>
+                <div
+                    class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
+                >
+                    <i
+                        class="ri-bug-line text-5xl py-2 font-thin group-hover:text-green-500"
+                    ></i>
+                    <p class="text-sm lg:text-lg">Run and Debug</p>
+                </div>
+                <div
+                    class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
+                >
+                    <i
+                        class="ri-git-branch-line text-5xl py-2 font-thin group-hover:text-red-400"
+                    ></i>
+                    <p class="text-sm lg:text-lg">Built-in Git</p>
+                </div>
+                <div
+                    class="flex flex-col items-center cursor-pointer text-[#444] hover:text-[#000] hover:bg-[#e3e3e3] py-2 px-12 justify-center text-center text-base group"
+                >
+                    <i
+                        class="ri-microsoft-line text-5xl py-2 font-thin group-hover:text-dark"
+                    ></i>
+                    <p class="text-sm lg:text-lg">Extensions</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section Icon Ends -->
+    </body>
 </html>
