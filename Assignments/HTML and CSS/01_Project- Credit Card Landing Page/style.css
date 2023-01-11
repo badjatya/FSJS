@@ -1,6 +1,7 @@
 :root {
     --background: #151515;
     --white: #fff;
+    --primary: #f637ec;
 }
 
 /* Resetting Styles */
@@ -30,12 +31,43 @@ a {
     text-decoration: none;
 }
 
+button {
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+/* Global Styles */
+
+.btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn img {
+    position: absolute;
+
+    top: -0.25rem;
+    left: -1rem;
+    z-index: -1;
+    width: 70px;
+    transition: all 0.3s ease;
+}
+.btn:hover img {
+    left: -0.3rem;
+    top: 0;
+}
+
+/* Nav Styles Starts */
+
 .nav-container {
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .nav__logo {
@@ -45,4 +77,38 @@ a {
 .nav__logo img {
     width: 100%;
     height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    display: none;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+.nav__btn svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.nav__btn:hover {
+    color: var(--primary);
+}
+.nav__btn:hover svg {
+    top: 0.25rem;
 }
