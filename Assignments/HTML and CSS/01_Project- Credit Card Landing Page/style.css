@@ -82,8 +82,16 @@ button {
 .navbar {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 1rem;
     display: none;
+}
+
+.navbar a {
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--primary);
 }
 
 .nav-buttons {
@@ -111,4 +119,20 @@ button {
 }
 .nav__btn:hover svg {
     top: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .nav-container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .navbar {
+        gap: 2rem;
+    }
 }
