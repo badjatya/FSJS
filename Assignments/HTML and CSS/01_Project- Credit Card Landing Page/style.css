@@ -298,4 +298,50 @@ button {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    body {
+        overflow-x: visible;
+    }
+    .main-container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-headings h1 {
+        font-size: 3.5rem;
+        margin-top: 3rem;
+    }
+
+    .main-button > .btn span {
+        font-size: 1.25rem;
+    }
+    .main-button > .btn > img {
+        top: -0.5rem;
+        width: 90px;
+    }
+
+    .main-stats {
+        gap: 3rem;
+    }
+    .main-stats h3 {
+        font-size: 2.5rem;
+    }
+    .main-stats p {
+        font-size: 1.05rem;
+    }
+
+    .main-images img {
+        width: 50%;
+        top: 5%;
+        left: 60%;
+    }
+
+    .main-images img:last-child {
+        top: -2%;
+        left: 50%;
+    }
+}
+
 /* Main Section Styles Ends */
