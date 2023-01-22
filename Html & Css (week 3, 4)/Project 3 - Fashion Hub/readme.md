@@ -1,8 +1,12 @@
-# Project 3
+# Fashion Hub - Project 3
 
-![Output](./output.png)
+The project hosted at [Website Link](https://badjatya-fashion-hub.netlify.app/)
+
+## Output
+
+![Output](./assets/output.png)
 
 ## Tech Used
 
-- HTML
-- CSS
+-   HTML
+-   CSS

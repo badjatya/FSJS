@@ -1,6 +1,10 @@
-# SEO Master (Project 1)
+# SEO Master - Project 1
 
-![Output](./output.png)
+The project hosted at [Website Link](https://badjatya-seo-master.netlify.app/)
+
+## Output
+
+![Output](./assets/output.png)
 
 ## Tech Used
 
