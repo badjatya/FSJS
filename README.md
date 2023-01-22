@@ -9,14 +9,14 @@
 
 ## HTML & CSS Projects
 
-| Projects No | Projects Name | Date        | Link     |
-| ----------- | ------------- | ----------- | -------- |
-| 01          | SEO Master    | 20 Nov 2022 | [link]() |
-| 02          | Crypto Market | 20 Nov 2022 | [link]() |
-| 03          | Fashion Hub   | 20 Nov 2022 | [link]() |
-| 04          | Calm          | 26 Nov 2022 | [link]() |
-| 05          | Medifine      | 26 Nov 2022 | [link]() |
-| 06          | Justice       | 26 Nov 2022 | [link]() |
+| Project No | Project Name  | Github Link | Live Link |
+| ---------- | ------------- | ----------- | --------- |
+| 01         | SEO Master    | [link]()    | [link]()  |
+| 02         | Crypto Market | [link]()    | [link]()  |
+| 03         | Fashion Hub   | [link]()    | [link]()  |
+| 04         | Calm          | [link]()    | [link]()  |
+| 05         | Medifine      | [link]()    | [link]()  |
+| 06         | Justice       | [link]()    | [link]()  |
 
 ## Projects ( Tailwind CSS )
 
