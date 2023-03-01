@@ -173,8 +173,6 @@ button {
 
 .main-container {
     overflow-x: hidden;
-    height: 100%;
-    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,6 +216,7 @@ button {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .main-stat__vector {
@@ -240,6 +239,7 @@ button {
 
 .main-images {
     width: 80%;
+    display: none;
 }
 .main-images img {
     width: 80%;
@@ -298,6 +298,7 @@ button {
     .main-container {
         flex-direction: row;
         align-items: start;
+        min-height: calc(100vh - 80px);
     }
 
     .main-headings h1 {
@@ -319,6 +320,9 @@ button {
     }
     .main-button {
         margin-bottom: 1rem;
+    }
+    .main-images {
+        display: block;
     }
 
     .main-images img {
@@ -377,3 +381,36 @@ button {
 }
 
 /* Main Section Styles Ends */
+
+/* companies Section Styles Starts */
+.companies {
+    background-color: #292929;
+    padding: 2rem 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: min-content;
+}
+
+.companies-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .companies {
+        padding: 4rem 20px;
+    }
+    .companies-container {
+        gap: 4rem;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .companies-container {
+        gap: 6rem;
+    }
+}
+
+/* companies Section Styles Ends */
