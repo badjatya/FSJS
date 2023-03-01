@@ -382,9 +382,9 @@ button {
 
 /* Main Section Styles Ends */
 
-/* companies Section Styles Starts */
+/* Companies Section Styles Starts */
 .companies {
-    background-color: #292929;
+    background-color: var(--background-light);
     padding: 2rem 20px;
     display: flex;
     align-items: center;
@@ -413,4 +413,107 @@ button {
     }
 }
 
-/* companies Section Styles Ends */
+/* Companies Section Styles Ends */
+
+/* Service Section Styles Starts */
+.service-container {
+    padding: 2rem 20px;
+}
+
+.service-header__container,
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-header__container h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.service-header__container h2 span {
+    color: var(--primary);
+}
+
+.service-header__container p {
+    color: var(--grey);
+}
+
+.cards {
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.service__card {
+    border: 1px solid var(--white);
+    background: var(--background-light);
+    text-align: center;
+    width: 80%;
+    padding: 1rem 0;
+}
+
+.service__card:nth-child(2) {
+    background: linear-gradient(150deg, var(--background-light) 0%, #fff 150%);
+}
+
+.service__card:nth-child(2) p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service__card p {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .service-header__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .service-cards__container {
+        width: max-content;
+        margin: 0 auto;
+    }
+    .cards {
+        flex-direction: row;
+        margin-top: 8rem;
+    }
+    .service-header__container h2 {
+        font-size: 2.225rem;
+        width: 50%;
+    }
+    .service-header__container p {
+        width: 35%;
+    }
+
+    .service__card:nth-child(2) {
+        position: relative;
+        bottom: 2rem;
+    }
+    .service__card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .service-header__container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .service-header__container h2 {
+        font-size: 4rem;
+        width: 55%;
+    }
+    .service-header__container p {
+        font-size: 1.25rem;
+        width: 40%;
+    }
+    .service__card {
+        min-width: 250px;
+    }
+}
+
+/* Service Section Styles Ends */
