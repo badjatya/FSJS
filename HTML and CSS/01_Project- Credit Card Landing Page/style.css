@@ -27,7 +27,7 @@ body {
     font-family: Poppins;
     font-weight: 400;
     color: var(--white);
-    overflow-x: hidden;
+    overflow: hidden !important;
 }
 
 ul {
@@ -57,15 +57,28 @@ button {
 .btn > img {
     position: absolute;
 
-    top: -0.25rem;
+    top: -0.08rem;
     left: -1rem;
     z-index: -1;
-    width: 70px;
+    width: 50px;
     transition: all 0.3s ease;
 }
 .btn:hover > img {
     left: -0.3rem;
     /* top: 0; */
+}
+.nav-buttons span {
+    font-size: 0.875rem;
+}
+
+@media screen and (min-width: 425px) {
+    .btn > img {
+        width: 70px;
+        top: -0.25rem;
+    }
+    .nav-buttons span {
+        font-size: 1rem;
+    }
 }
 
 /* Nav Styles Starts */
@@ -79,7 +92,7 @@ button {
 }
 
 .nav__logo {
-    width: 100px;
+    width: 80px;
 }
 
 .nav__logo img {
@@ -129,6 +142,12 @@ button {
     top: 0.25rem;
 }
 
+@media screen and (min-width: 425px) {
+    .nav__logo {
+        width: 100px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .navbar {
         display: flex;
@@ -148,6 +167,10 @@ button {
 /* Nav Styles Ends */
 
 /* Main Section Styles Starts */
+.main {
+    position: relative;
+}
+
 .main-container {
     overflow: hidden;
     height: 100%;
@@ -156,7 +179,6 @@ button {
     flex-direction: column;
     align-items: center;
     padding: 0 20px;
-    position: relative;
 }
 
 .main-headings {
