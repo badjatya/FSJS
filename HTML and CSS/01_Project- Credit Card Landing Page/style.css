@@ -4,6 +4,7 @@
     --white: #fff;
     --primary: #f637ec;
     --grey: #b4b4b4;
+    --black: #000;
 }
 
 /* Resetting Styles */
@@ -517,3 +518,40 @@ button {
 }
 
 /* Service Section Styles Ends */
+
+/* Credit Cards Section Styles Starts */
+.credit-cards {
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    padding: 6rem 4rem;
+}
+
+.credit-cards h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.credit-cards h2 span {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.credit-cards p {
+    margin-top: 2rem;
+    color: var(--background-light);
+}
+
+.credit-cards img {
+    width: 250px;
+    position: relative;
+    top: -2rem;
+}
+
+@media screen and (min-width: 1280px) {
+    .credit-cards img {
+        position: relative;
+        top: -2rem;
+    }
+}
+/* Credit Cards Section Styles Starts */
