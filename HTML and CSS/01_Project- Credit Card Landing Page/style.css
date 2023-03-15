@@ -544,7 +544,7 @@ button {
     color: var(--background-light);
 }
 
-.service-cards_image-container {
+.credit-cards_image-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -577,6 +577,19 @@ button {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .credit-cards h2 {
+        font-size: 3rem;
+        width: 60%;
+    }
+
+    .credit-cards p {
+        margin-top: 2rem;
+        font-size: 1rem;
+        width: 60%;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .credit-cards {
         padding: 6rem 4rem;
@@ -584,13 +597,11 @@ button {
     }
 
     .credit-cards h2 {
-        font-size: 3rem;
-        width: 40%;
+        font-size: 4rem;
+        width: 60%;
     }
 
     .credit-cards p {
-        margin-top: 2rem;
-        font-size: 1rem;
         width: 40%;
     }
 
@@ -599,4 +610,120 @@ button {
         top: -3rem;
     }
 }
-/* Credit Cards Section Styles Starts */
+/* Credit Cards Section Styles Ends */
+
+/* Review Section Styles Starts */
+.review {
+    background-color: var(--background);
+    color: var(--white);
+    padding: 2rem;
+}
+
+.review h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.review h2 span {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.review-para {
+    margin: 2rem 0;
+    font-size: 0.875rem;
+    color: var(--grey);
+    text-align: center;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-cards__container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+.review-cards__card {
+    border: 1px solid var(--white);
+    background: var(--background-light);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.review-cards__card:hover {
+    border: 1px solid var(--primary);
+    -webkit-box-shadow: 10px 10px 18px -1px var(--primary);
+    -moz-box-shadow: 10px 10px 18px -1px var(--primary);
+    box-shadow: 10px 10px 18px -1px var(--primary);
+}
+
+.review-cards__card:first-child {
+    background: linear-gradient(150deg, var(--background-light) 0%, #fff 150%);
+}
+
+@media screen and (min-width: 768px) {
+    .review-cards__card {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .review {
+        padding: 6rem 4rem;
+    }
+
+    .review h2 {
+        font-size: 3rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .review-para {
+        width: 60%;
+        margin: 2rem auto;
+    }
+
+    .review-cards__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 64px;
+        grid-row-gap: 64px;
+    }
+
+    .review-cards__card:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .review-cards__card:nth-child(2) {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .review-cards__card:nth-child(3) {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .review-cards__card:nth-child(4) {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .review h2 {
+        font-size: 4rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .review-para {
+        width: 40%;
+        margin: 2rem auto;
+    }
+}
+
+/* Review Section Styles Ends */
