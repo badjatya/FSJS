@@ -400,6 +400,10 @@ button {
     gap: 2rem;
 }
 
+.companies-container img {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1024px) {
     .companies {
         padding: 4rem 20px;
@@ -453,6 +457,15 @@ button {
     text-align: center;
     width: 80%;
     padding: 1rem 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service__card:hover {
+    border: 1px solid var(--primary);
+    -webkit-box-shadow: 10px 10px 18px -1px var(--primary);
+    -moz-box-shadow: 10px 10px 18px -1px var(--primary);
+    box-shadow: 10px 10px 18px -1px var(--primary);
 }
 
 .service__card:nth-child(2) {
@@ -656,6 +669,7 @@ button {
     padding: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: var(--grey);
 }
 
 .review-cards__card:hover {
@@ -663,15 +677,59 @@ button {
     -webkit-box-shadow: 10px 10px 18px -1px var(--primary);
     -moz-box-shadow: 10px 10px 18px -1px var(--primary);
     box-shadow: 10px 10px 18px -1px var(--primary);
+    color: var(--white);
 }
 
 .review-cards__card:first-child {
     background: linear-gradient(150deg, var(--background-light) 0%, #fff 150%);
 }
 
+.review-cards__card .desc {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+}
+
+.review-cards__card .address {
+    font-size: 0.875rem;
+}
+
+.review-dots {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.review-dots__horizontal {
+    background: var(--primary);
+    width: 4rem;
+    height: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 16px 4px rgba(246, 55, 236, 0.3);
+    -moz-box-shadow: 0px 0px 16px 4px rgba(246, 55, 236, 0.3);
+    box-shadow: 0px 0px 16px 4px rgba(246, 55, 236, 0.3);
+}
+
+.review-dots__dot {
+    background: var(--grey);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.review-dots__dot:hover {
+    background: var(--primary);
+    -webkit-box-shadow: 0px 0px 16px 4px rgba(246, 55, 236, 0.3);
+    -moz-box-shadow: 0px 0px 16px 4px rgba(246, 55, 236, 0.3);
+    box-shadow: 0px 0px 16px 4px rgba(246, 55, 236, 0.3);
+}
+
 @media screen and (min-width: 768px) {
     .review-cards__card {
-        width: 450px;
+        width: 420px;
     }
 }
 
