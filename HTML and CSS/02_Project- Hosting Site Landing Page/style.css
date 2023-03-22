@@ -257,3 +257,37 @@ main {
     }
 }
 /* Main Section Styles Ends */
+
+/* Companies Section Styles Starts */
+.companies {
+    background-color: var(--background-light);
+    padding: 2rem 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: min-content;
+}
+
+.companies-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.companies-container img {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .companies-container {
+        gap: 4rem;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .companies-container {
+        gap: 6rem;
+    }
+}
+
+/* Companies Section Styles Ends */
