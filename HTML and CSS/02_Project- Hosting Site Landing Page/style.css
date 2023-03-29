@@ -699,3 +699,23 @@ main {
 }
 
 /* Pricing Section Styles Ends */
+
+/* Testimonial Section Styles Ends */
+.testimonial {
+    background: var(--white);
+    padding: 2rem 1rem;
+    color: var(--black);
+}
+.testimonial-heading {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.testimonial-description {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--grey);
+    font-size: 0.875rem;
+}
+/* Testimonial Section Styles Ends */
