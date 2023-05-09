@@ -1,0 +1,29 @@
+/* Resetting Styles */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    background: transparent;
+    border: none;
+}
