@@ -1,0 +1,12 @@
+body {
+    background-color: #cce6f4;
+    height: 100vh;
+    overflow: hidden;
+}
+.element {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
