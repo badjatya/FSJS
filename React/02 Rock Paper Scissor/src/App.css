@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.App {
+    text-align: center;
+    background-color: #eed2cc;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #264653;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.player-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player div {
+    font-size: 40px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+
+.controls button {
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #a2d2ff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all 0.5s ease;
+}
+
+.controls button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 160, 255);
+    box-shadow: rgba(0, 160, 255, 0.25) 0px 54px 55px,
+        rgba(0, 160, 255, 0.12) 0px -12px 30px,
+        rgba(0, 160, 255, 0.12) 0px 4px 6px,
+        rgba(0, 160, 255, 0.17) 0px 12px 13px,
+        rgba(0, 160, 255, 0.09) 0px -3px 5px;
+}
+
+.controls button span {
+    font-size: 40px;
+}
+
+.winner {
+    font-size: 42px;
+    color: rgba(0, 255, 0);
+}

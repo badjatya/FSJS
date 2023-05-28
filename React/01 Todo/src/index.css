@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffeaa7;
+    min-height: 70vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(198, 1%, 29%);
+    font-family: "Architects Daughter", cursive;
+    text-align: center;
+    font-size: 130%;
+}
+
+.form input {
+    background-color: transparent;
+    padding: 0.7rem;
+    border: dashed 3px #fdcb6e;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: hsla(260, 2%, 25%, 0.7);
+    width: 70%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    font-family: "Architects Daughter", cursive;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #fdcb6e;
+    color: #000;
+    cursor: pointer;
+}
