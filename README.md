@@ -1,4 +1,4 @@
-# FSJS Projects and Articles
+# FSJS2 Projects and Articles
 
 ## Articles
 
