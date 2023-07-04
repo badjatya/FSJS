@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Form Validation</title>
+        <style>
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Basic Form Validation</h2>
+        <form name="myForm" onsubmit="return validateForm()">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <span id="nameError" class="error"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <span id="emailError" class="error"></span>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required />
+                <span id="phoneError" class="error"></span>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+                <span id="passwordError" class="error"></span>
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required />
+                <span id="ageError" class="error"></span>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <span id="genderError" class="error"></span>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required />
+                <span id="dateError" class="error"></span>
+            </div>
+            <div>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color" required />
+                <span id="colorError" class="error"></span>
+            </div>
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+        <script>
+            function validateForm() {
+                // Clear previous error messages
+                clearErrors();
+
+                var name = document.forms["myForm"]["name"].value;
+                var email = document.forms["myForm"]["email"].value;
+                var phone = document.forms["myForm"]["phone"].value;
+                var password = document.forms["myForm"]["password"].value;
+                var age = document.forms["myForm"]["age"].value;
+                var gender = document.forms["myForm"]["gender"].value;
+                var date = document.forms["myForm"]["date"].value;
+                var color = document.forms["myForm"]["color"].value;
+
+                // Validate name field
+                if (name === "") {
+                    showError("nameError", "Please enter your name");
+                    return false;
+                }
+
+                // Validate email field
+                if (email === "") {
+                    showError("emailError", "Please enter your email");
+                    return false;
+                }
+                // Validate phone number field
+                if (phone === "") {
+                    showError("phoneError", "Please enter your phone number");
+                    return false;
+                }
+
+                // Validate password field
+                if (password === "") {
+                    showError("passwordError", "Please enter your password");
+                    return false;
+                }
+
+                // Validate age field
+                if (age === "") {
+                    showError("ageError", "Please enter your age");
+                    return false;
+                }
+
+                // Validate gender field
+                if (gender === "") {
+                    showError("genderError", "Please select your gender");
+                    return false;
+                }
+
+                // Validate date field
+                if (date === "") {
+                    showError("dateError", "Please select a date");
+                    return false;
+                }
+
+                // Validate color field
+                if (color === "") {
+                    showError("colorError", "Please select a color");
+                    return false;
+                }
+
+                // Form validation successful
+                return true;
+            }
+
+            function showError(id, message) {
+                var errorElement = document.getElementById(id);
+                errorElement.innerHTML = message;
+            }
+
+            function clearErrors() {
+                var errorElements = document.getElementsByClassName("error");
+                for (var i = 0; i < errorElements.length; i++) {
+                    errorElements[i].innerHTML = "";
+                }
+            }
+        </script>
+    </body>
+</html>
