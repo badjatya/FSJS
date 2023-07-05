@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .music-player {
+      display: flex;
+      align-items: center;
+    }
+
+    .controls {
+      margin-right: 10px;
+    }
+
+    audio {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="music-player">
+    <div class="controls">
+      <button onclick="playAudio()">Play</button>
+      <button onclick="pauseAudio()">Pause</button>
+    </div>
+    <audio id="audio-player" src="path/to/your/audio.mp3"></audio>
+  </div>
+
+  <script>
+    const audioPlayer = document.getElementById('audio-player');
+
+    function playAudio() {
+      audioPlayer.play();
+    }
+
+    function pauseAudio() {
+      audioPlayer.pause();
+    }
+  </script>
+</body>
+</html>

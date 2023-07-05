@@ -1,0 +1,1 @@
+Write HTML code so that it looks like the below image
