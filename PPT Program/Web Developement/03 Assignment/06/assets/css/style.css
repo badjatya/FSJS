@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+ul,
+button {
+    display: none;
+}
+
+.menu {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #0093f7;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    color: #0093f7;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.partners {
+    width: 350px;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 769px) {
+    .menu {
+        display: none;
+    }
+
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    main {
+        padding: 0;
+        flex-direction: row;
+        margin-top: 4rem;
+        align-items: start;
+    }
+
+    video {
+        width: 55%;
+        margin-top: -4rem;
+        margin-right: -4rem;
+    }
+
+    ul,
+    button {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+
+    button {
+        background: #0093f7;
+        color: #fff;
+        padding: 0.75rem 2rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.25rem;
+    }
+}
