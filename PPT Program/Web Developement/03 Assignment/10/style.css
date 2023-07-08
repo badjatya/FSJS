@@ -1,0 +1,31 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    max-width: 1280px;
+    border-collapse: collapse;
+    margin: 0 auto 20px auto;
+    border: 1px solid #555;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    table {
+        margin-left: 0;
+    }
+    th:nth-child(3),
+    td:nth-child(3) {
+        display: none;
+    }
+}
