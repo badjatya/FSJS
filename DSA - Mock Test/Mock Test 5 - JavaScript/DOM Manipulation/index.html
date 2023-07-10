@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+            .box {
+                width: 300px;
+                height: 300px;
+                background-color: red;
+                transition: background-color 0.5s, transform 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="myBox"></div>
+
+        <script>
+            const box = document.getElementById("myBox");
+
+            box.addEventListener("click", function () {
+                box.style.backgroundColor = "yellow";
+                box.style.transform = "scale(2)";
+            });
+        </script>
+    </body>
+</html>
