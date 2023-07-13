@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3c329a;
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    position: absolute;
+    font-size: 200px;
+    top: 0;
+    left: 15%;
+    color: #1e194d;
+}
+
+.clock {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+#time {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
